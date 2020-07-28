@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Супер погода</string>
+    <string name="navigation_drawer_open">Открыть панель навигации</string>
+    <string name="navigation_drawer_close">Закрыть панель навигации</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Заголовок панели навигации</string>
+    <string name="action_settings">Настройки</string>
+    <string name="moscow">Москва</string>
+    <string name="now_sunny">Сейчас - Солнечно</string>
+    <string name="wind">Ветер 2м/с, Ю-В</string>
+    <string name="pressure">Давление 751 мм р.с.</string>
+    <string name="humidity">Влажность 72%</string>
+    <string name="water">Т. воды 17 C</string>
+    <string name="menu_home">На главную</string>
+    <string name="menu_gallery">Галерея</string>
+    <string name="menu_slideshow">Слайд-шоу</string>
+    <string name="icon">Солнечно</string>
+</resources>
