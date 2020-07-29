@@ -5,19 +5,19 @@
         <CheckBoxPreference
             android:defaultValue="true"
             android:key="check_box_preference_Wind"
-            android:title="@string/wind" />
+            android:title="@string/windPreference" />
         <CheckBoxPreference
             android:defaultValue="true"
-            android:key="check_box_preference_1"
-            android:title="Check box preference" />
+            android:key="check_box_preference_Pressure"
+            android:title="@string/pressurePreference" />
         <CheckBoxPreference
             android:defaultValue="true"
-            android:key="check_box_preference_1"
-            android:title="Check box preference" />
+            android:key="check_box_preference_Water"
+            android:title="@string/waterPreference" />
         <CheckBoxPreference
             android:defaultValue="true"
-            android:key="check_box_preference_1"
-            android:title="Check box preference" />
+            android:key="check_box_preference_Humidity"
+            android:title="@string/humidityPreference" />
 
     </PreferenceCategory>
 </PreferenceScreen>
