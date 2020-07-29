@@ -12,33 +12,29 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:contentDescription="@string/icon"
         android:src="@drawable/sunny1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.409"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tViewCiy"
-        android:contentDescription="@string/icon" />
+        app:layout_constraintTop_toBottomOf="@+id/tViewCiy" />
 
-    <TextView
-        android:id="@+id/tViewCiy"
-        android:layout_width="match_parent"
+    <ImageView
+        android:id="@+id/iViewSettings"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/moscow"
-        android:textAlignment="center"
-        android:textColor="@color/cardview_light_background"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="?attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="@+id/tViewCiy"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tViewCiy"
+        app:srcCompat="@drawable/settings3"
+        android:contentDescription="@string/settings" />
 
     <TextView
         android:id="@+id/tViewTemperature"
-        android:layout_width="68dp"
-        android:layout_height="45dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="@string/sp_16"
         android:textAlignment="center"
@@ -109,5 +105,21 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/tViewHumidity"
         app:layout_constraintTop_toBottomOf="@+id/tViewPressure" />
+
+    <TextView
+        android:id="@+id/tViewCiy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/moscow"
+        android:textAlignment="center"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/iViewSettings"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

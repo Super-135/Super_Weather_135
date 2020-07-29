@@ -17,4 +17,20 @@
     <string name="menu_gallery">Галерея</string>
     <string name="menu_slideshow">Слайд-шоу</string>
     <string name="icon">Солнечно</string>
+    <string name="current_place">Текущее место</string>
+    <string name="favourites">Избранное</string>
+    <string name="select_city"> + Выберите город</string>
+    <string name="activity_Settings">Панель настроек</string>
+    <string name="title_activity_settings">Панель настроек</string>
+
+    <!-- Preference Titles -->
+    <string name="settings_title1">Настройки пользователя</string>
+
+    <string name="windPreference">Отображать ветер</string>
+    <string name="pressurePreference">Отображать давление</string>
+    <string name="waterPreference">Отображать т. воды</string>
+    <string name="humidityPreference">Отображать влажность</string>
+    <string name="settings">Настройки</string>
+
+
 </resources>
