@@ -31,6 +31,7 @@
     <string name="waterPreference">Отображать т. воды</string>
     <string name="humidityPreference">Отображать влажность</string>
     <string name="settings">Настройки</string>
+    <string name="add_5_degrees">Добавить 5 градусов</string>
 
 
 </resources>
