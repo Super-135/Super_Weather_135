@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent shareIntent = new Intent(Intent.ACTION_SEND);
                 shareIntent.setType("text/plain");
-                shareIntent.putExtra(Intent.EXTRA_TEXT, "Передаю свою температуру\n "+tViewCiy.getText().toString()+ "  "+ tViewTemperature.getText().toString());
+                shareIntent.putExtra(Intent.EXTRA_TEXT, R.string.sendweatherMsg + "\n "+tViewCiy.getText().toString()+ "  "+ tViewTemperature.getText().toString());
                 startActivity(Intent.createChooser(shareIntent, "Share text"));
             }
         });

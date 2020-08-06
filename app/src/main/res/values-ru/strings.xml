@@ -33,6 +33,7 @@
     <string name="settings">Настройки</string>
     <string name="add_5_degrees">Добавить 5 градусов</string>
     <string name="sendweather">Отправить погоду</string>
+    <string name="sendweatherMsg">Отправляю свою погоду</string>
 
 
 </resources>
