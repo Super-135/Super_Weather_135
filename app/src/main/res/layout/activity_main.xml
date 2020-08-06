@@ -7,6 +7,16 @@
     android:background="@drawable/side_nav_bar"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/btnSendWeather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sendweather"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tViewWater" />
+
     <ImageView
         android:id="@+id/iViewIcons"
         android:layout_width="wrap_content"
@@ -23,13 +33,25 @@
         android:id="@+id/iViewSettings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
         android:background="?attr/selectableItemBackground"
+        android:contentDescription="@string/settings"
         app:layout_constraintBottom_toBottomOf="@+id/tViewCiy"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/tViewCiy"
-        app:srcCompat="@drawable/settings3"
-        android:contentDescription="@string/settings" />
+        app:layout_constraintTop_toTopOf="@+id/tViewCiy"
+        app:srcCompat="@drawable/settings3" />
+
+    <ImageView
+        android:id="@+id/iViewCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="@string/settings"
+        app:layout_constraintBottom_toBottomOf="@+id/tViewCiy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tViewCiy"
+        app:srcCompat="@drawable/city" />
 
     <TextView
         android:id="@+id/tViewTemperature"
@@ -108,28 +130,15 @@
 
     <TextView
         android:id="@+id/tViewCiy"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="@string/moscow"
+        android:layout_width="276dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
         android:textAlignment="center"
         android:textColor="@color/cardview_light_background"
         android:textSize="28sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/iViewSettings"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
-
-    <Button
-        android:id="@+id/btnAdd5Degrees"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/add_5_degrees"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tViewWater" />
+        app:layout_constraintStart_toEndOf="@+id/iViewCity"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

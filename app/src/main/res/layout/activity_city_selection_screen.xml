@@ -44,7 +44,6 @@
         android:layout_height="wrap_content"
         android:background="@drawable/side_nav_bar"
         android:padding="10dp"
-        android:text="@string/moscow"
         android:textColor="@color/cardview_light_background"
         android:textSize="32sp"
         android:textStyle="bold"
