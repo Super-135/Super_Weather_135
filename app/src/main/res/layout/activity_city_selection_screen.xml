@@ -4,12 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".CitySelectionScreen">
 
     <FrameLayout
+        android:id="@+id/asd"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <fragment android:name="com.super_135.superweather.FragmenstMain"
+        <fragment android:name="com.super_135.superweather.FragmentCitySelection"
             android:id="@+id/main"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
