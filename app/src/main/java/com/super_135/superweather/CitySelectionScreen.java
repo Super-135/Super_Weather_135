@@ -29,7 +29,7 @@ public class CitySelectionScreen extends AppCompatActivity {
         findView();
         showBackBtn();
         setOniViewCurrent();
-        showDataFromFirstActivity();
+//        showDataFromFirstActivity();
     }
 
     @Override
@@ -78,7 +78,7 @@ public class CitySelectionScreen extends AppCompatActivity {
         }
     }
 
-    private void showDataFromFirstActivity(){
-        tViewCurrentCity.setText(getIntent().getStringExtra(MainActivity.currentPointKey));
-    }
+//    private void showDataFromFirstActivity(){
+//        tViewCurrentCity.setText(getIntent().getStringExtra(MainActivity.currentPointKey));
+//    }
 }
