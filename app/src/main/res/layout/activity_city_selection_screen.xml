@@ -16,8 +16,7 @@
         android:padding="10dp"
         android:text="@string/current_place"
         android:textColor="@android:color/background_dark"
-        android:textSize="25sp"
-        android:textStyle="bold"
+        style="@style/format_text_view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -45,8 +44,7 @@
         android:background="@drawable/side_nav_bar"
         android:padding="10dp"
         android:textColor="@color/cardview_light_background"
-        android:textSize="32sp"
-        android:textStyle="bold"
+        style="@style/format_text_view"
         app:layout_constraintBottom_toTopOf="@+id/tViewtFavourites"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -64,43 +62,50 @@
         android:padding="10dp"
         android:text="@string/favourites"
         android:textColor="@android:color/background_dark"
-        android:textSize="25sp"
-        android:textStyle="bold"
+        style="@style/format_text_view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <ImageView
         android:id="@+id/iViewFavourites"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toStartOf="@+id/tViewtFavouritesCity"
+        android:layout_marginTop="8dp"
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="@string/favourites"
+        app:layout_constraintEnd_toStartOf="@+id/tViewFavouritesCityL"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_weight="1"
-        android:background="?attr/selectableItemBackground"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tViewtFavourites"
-        app:srcCompat="@drawable/search1"
-        android:contentDescription="@string/favourites" />
+        app:srcCompat="@drawable/search1" />
 
-    <EditText
-        android:id="@+id/tViewtFavouritesCity"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tViewFavouritesCityL"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/side_nav_bar"
-        android:hint="@string/select_city"
         android:padding="10dp"
         android:textColor="@color/cardview_light_background"
-        android:textColorHint="@color/cardview_grey_background"
-        android:textSize="32sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/format_text_view"
+        android:layout_marginTop="8dp"
+        app:errorEnabled="true"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_weight="4"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/iViewFavourites"
-        app:layout_constraintTop_toBottomOf="@+id/tViewtFavourites"
-        android:autofillHints="@string/select_city"
-        android:inputType= "textPersonName"/>
+        app:layout_constraintTop_toBottomOf="@+id/tViewtFavourites">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tViewFavouritesCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/select_city"
+            android:inputType="textPersonName"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

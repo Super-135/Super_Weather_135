@@ -5,14 +5,12 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.super_135.superweather.CitySelectionScreen;
+import com.google.android.material.button.MaterialButton;
+import com.google.android.material.snackbar.Snackbar;
 import com.super_135.superweather.R;
-
-import java.util.Objects;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -21,20 +19,14 @@ import androidx.fragment.app.Fragment;
 public class FragmentMain extends Fragment {
 
     private ImageView iViewSettings;
-    private Integer temperature = 15;
-    private String currentPoint = "Москва";
     private TextView tViewTemperature;
-    private Button btnSendWeather;
+    private MaterialButton btnSendWeather;
     private ImageView iViewCity;
     private TextView tViewCiy;
 
-    private final int requestCode = 111;
-
-
-    final String temperatureKey = "temperatureKey";
+    private Integer temperature = 15;
+    private String currentPoint = "Москва";
     final String plus = "+";
-    final static String currentPointKey = "currentPointKey";
-
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -50,20 +42,28 @@ public class FragmentMain extends Fragment {
         setOniViewCurrent();
         setDefaultValues();
         SetOnSelectCity();
+        SetOnSelectSettings();
 
+    }
+
+    private void SetOnSelectSettings(){
+        iViewSettings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Snackbar.make(view, R.string.snackbar_text, Snackbar.LENGTH_LONG).show();
+            }
+        });
     }
 
     private void SetOnSelectCity() {
         iViewCity.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                Intent intent = new Intent();
-                intent.setClass(Objects.requireNonNull(getActivity()), CitySelectionScreen.class);
-                intent.putExtra(currentPointKey,tViewCiy.getText().toString());
-                startActivityForResult(intent,requestCode);
+            public void onClick(View view) {
+                Snackbar.make(view, R.string.snackbar_text, Snackbar.LENGTH_LONG).show();
             }
         });
     }
+
 
     private void setDefaultValues() {
         tViewTemperature.setText(plus+ temperature.toString());
@@ -89,5 +89,6 @@ public class FragmentMain extends Fragment {
         iViewCity = view.findViewById(R.id.iViewCity);
         tViewCiy = view.findViewById(R.id.tViewCiy);
     }
+
 
 }

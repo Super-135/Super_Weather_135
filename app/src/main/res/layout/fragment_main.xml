@@ -8,14 +8,17 @@
     android:background="@drawable/side_nav_bar"
     tools:context=".MainActivity">
 
-    <Button
+
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnSendWeather"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="22dp"
         android:text="@string/sendweather"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tViewWater" />
 
     <ImageView
@@ -37,7 +40,6 @@
         android:layout_marginEnd="10dp"
         android:background="?attr/selectableItemBackground"
         android:contentDescription="@string/settings"
-        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@+id/tViewCiy"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/tViewCiy"
@@ -50,7 +52,6 @@
         android:layout_marginStart="10dp"
         android:background="?attr/selectableItemBackground"
         android:contentDescription="@string/settings"
-        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@+id/tViewCiy"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/tViewCiy"
@@ -87,11 +88,12 @@
         android:id="@+id/textViewWind"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="12dp"
+        android:textSize="14sp"
         android:text="@string/wind"
         android:textColor="@color/cardview_light_background"
-        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tViewWeather" />
 
@@ -101,9 +103,9 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginTop="12dp"
+        android:textSize="14sp"
         android:text="@string/pressure"
         android:textColor="@color/cardview_light_background"
-        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tViewWeather" />
 
@@ -111,22 +113,25 @@
         android:id="@+id/tViewHumidity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="12dp"
+        android:textSize="14sp"
         android:text="@string/humidity"
         android:textColor="@color/cardview_light_background"
-        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="@+id/textViewWind"
-        app:layout_constraintTop_toBottomOf="@+id/tViewWeather" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewWind" />
 
     <TextView
         android:id="@+id/tViewWater"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
         android:layout_marginTop="12dp"
         android:text="@string/water"
         android:textColor="@color/cardview_light_background"
         android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="@+id/tViewPressure"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/tViewHumidity"
         app:layout_constraintTop_toBottomOf="@+id/tViewPressure" />
@@ -135,6 +140,7 @@
         android:id="@+id/tViewCiy"
         android:layout_width="276dp"
         android:layout_height="35dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginTop="16dp"
         android:textAlignment="center"
         android:textColor="@color/cardview_light_background"

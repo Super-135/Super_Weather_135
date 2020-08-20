@@ -9,6 +9,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.textfield.TextInputEditText;
+
 import java.util.Objects;
 
 import androidx.annotation.NonNull;
@@ -18,7 +20,7 @@ public class CitySelectionScreen extends AppCompatActivity {
     private ImageView iViewCurrent;
     private ImageView iViewFavourites;
     private TextView tViewCurrentCity;
-    private TextView tViewtFavouritesCity;
+    private TextInputEditText tViewFavouritesCity;
     final static String currentPointKey1 = "currentPointKey1";
 
     @Override
@@ -29,16 +31,15 @@ public class CitySelectionScreen extends AppCompatActivity {
         findView();
         showBackBtn();
         setOniViewCurrent();
-//        showDataFromFirstActivity();
     }
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (item.getItemId()== android.R.id.home) {
             Intent intentCity = new Intent();
-            String strDate = tViewtFavouritesCity.getText().toString();
-            if (! strDate.equals("")) {
-                intentCity.putExtra(currentPointKey1, strDate);
+            String strData = tViewFavouritesCity.getText().toString();
+            if (! strData.equals("")) {
+                intentCity.putExtra(currentPointKey1, strData);
             } else {
                 intentCity.putExtra(currentPointKey1, tViewCurrentCity.getText().toString());
             }
@@ -67,7 +68,7 @@ public class CitySelectionScreen extends AppCompatActivity {
         iViewCurrent = findViewById(R.id.iViewCurrent);
         iViewFavourites = findViewById(R.id.iViewFavourites);
         tViewCurrentCity = findViewById(R.id.tViewCurrentCity);
-        tViewtFavouritesCity = findViewById(R.id.tViewtFavouritesCity);
+        tViewFavouritesCity = findViewById(R.id.tViewFavouritesCity);
     }
 
     private void showBackBtn(){
@@ -78,7 +79,4 @@ public class CitySelectionScreen extends AppCompatActivity {
         }
     }
 
-//    private void showDataFromFirstActivity(){
-//        tViewCurrentCity.setText(getIntent().getStringExtra(MainActivity.currentPointKey));
-//    }
 }

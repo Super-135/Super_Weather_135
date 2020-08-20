@@ -15,6 +15,7 @@ public class RecyclerDateAdapter extends RecyclerView.Adapter<RecyclerDateAdapte
     private ArrayList<String> data;
     private IRVOnItemClick onItemClick;
 
+
     public RecyclerDateAdapter(ArrayList<String> data, IRVOnItemClick onItemClick){
         this.data = data;
         this.onItemClick = onItemClick;
