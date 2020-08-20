@@ -12,9 +12,12 @@
     <string name="menu_slideshow">Slideshow</string>
     <string name="sp_16" translatable="false">+</string>
     <string name="now_sunny">now - Sunny</string>
-    <string name="wind">Wind 2м/с, S-E</string>
-    <string name="pressure">Pressure 751 mm m.c.</string>
-    <string name="humidity">Humidity 72%</string>
+    <string name="wind">Wind</string>
+    <string name="wind1">м/с</string>
+    <string name="pressure">Pressure </string>
+    <string name="pressure1"> mm m.c.</string>
+    <string name="humidity">Humidity</string>
+    <string name="humidity1">%</string>
     <string name="water">Water t. 17 C</string>
     <string name="icon">Sunny</string>
     <string name="current_place">Current place</string>
@@ -45,6 +48,7 @@
     <string name="sendweather">Send Weather</string>
     <string name="sendweatherMsg">Send Weather</string>
     <string name="snackbar_text">Temporarily unavailable. Work is underway</string>
+    <string name="server_unavailable">The server is unavailable</string>
 
 
 </resources>

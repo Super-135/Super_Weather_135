@@ -9,9 +9,12 @@
     <string name="action_settings">Настройки</string>
     <string name="moscow">Москва</string>
     <string name="now_sunny">Сейчас - Солнечно</string>
-    <string name="wind">Ветер 2м/с, Ю-В</string>
-    <string name="pressure">Давление 751 мм р.с.</string>
-    <string name="humidity">Влажность 72%</string>
+    <string name="wind">Ветер</string>
+    <string name="wind1">м/с</string>
+    <string name="pressure">Давление</string>
+    <string name="pressure1">мм р.с.</string>
+    <string name="humidity">Влажность</string>
+    <string name="humidity1">%</string>
     <string name="water">Т. воды 17 C</string>
     <string name="menu_home">На главную</string>
     <string name="menu_gallery">Галерея</string>
@@ -35,6 +38,7 @@
     <string name="sendweather">Отправить погоду</string>
     <string name="sendweatherMsg">Отправляю свою погоду</string>
     <string name="snackbar_text">Временно недоступно. Идут работы</string>
+    <string name="server_unavailable">Сервер недоступен</string>
 
 
 </resources>
